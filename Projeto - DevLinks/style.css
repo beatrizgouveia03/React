@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: white;
+  --border-color: rgb(132, 250, 210);
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(127, 255, 212, 0.3);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.5);
+  --highlight-hover:rgba(255, 255, 255, 0.2);
+}
+
+.light {
+  --text-color: black;
+  --border-color: rgb(46, 221, 163);
+  --bg-url: url(./assets/bg-lightmode.jpg);
+  --stroke-color: rgba(41, 68, 59, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-hover:rgba(0, 0, 0, 0.1);
+}
+
 body {
   /*
   background-image: url(./assets/bg-mobile.jpg);
@@ -13,12 +33,12 @@ body {
   */
 
   /*Background: color url repeat position/size*/
-  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
   font-family: "Inter", sans-serif;
-  color: white;
+  color: var(--text-color);
 }
 
 #container {
@@ -71,8 +91,8 @@ ul li a {
 
   padding: 16px 24px;
 
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(127, 255, 212, 0.1);
+  background: var(--surface-color);
+  border: 2px solid var(--stroke-color);
   border-radius: 8px;
 
   backdrop-filter: blur(4px);
@@ -86,8 +106,8 @@ ul li a {
 
 /*Pseudo-selector*/
 ul li a:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid rgb(106, 233, 191);
+  background: var(--surface-color-hover);
+  border: 2px solid var(--border-color);
 }
 
 /*Socia Links*/
@@ -111,7 +131,7 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--highlight-hover);
 }
 
 footer {
