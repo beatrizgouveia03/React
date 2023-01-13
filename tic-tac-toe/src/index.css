@@ -5,6 +5,18 @@ body{
 
 ol,ul {
     padding-left: 30px;
+    padding-top: 10px;
+
+}
+
+#time-travel{
+    background: #fff ;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid rgb(85, 82, 82);
+    border-radius: 15%;
+    
 }
 
 .board-row:after {
