@@ -1,0 +1,25 @@
+.btn-outline-success{
+    color: #47a447;
+    background: #fff;
+    padding: 5px 8px;
+    border: 1px solid #47a447;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: #47a447;
+    color: #fff;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /*display: none;*/
+}

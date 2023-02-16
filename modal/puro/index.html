@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Modal Puro</title>
+</head>
+<body>
+    <h1>Janela Modal</h1>
+
+    <button class="btn-outline-success" onclick="abrirModal('vis-modal')">Abrir Modal</button>
+
+
+    <div id="vis-modal" class="modal">
+        <div class="conteudo-modal">
+            <div class="cabecalho-modal">
+                <h1>Visualizar</h1>
+                <span 
+                    class="cabecalho-modal-fechar"
+                    onclick="fecharModal('vis-modal')"    
+                >X</span>
+            </div>
+
+            <div class="corpo-modal">
+                teste modal
+            </div>
+            <div class="rodape-modal">
+                <button
+                    class="btn-outline-success"
+                    onclick="fecharModal('vis-modal')"
+                >Fechar</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/custom.js"></script>
+</body>
+</html>
