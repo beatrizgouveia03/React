@@ -21,5 +21,40 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    /*display: none;*/
+    display: none;
+}
+
+.conteudo-modal {
+    margin: 0 auto;
+    margin-top: 3%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+
+}
+
+.cabecalho-modal {
+    padding: 1px 8px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #eee 1px;
+}
+
+.cabecalho-modal .titulo-modal{
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.cabecalho-modal .cabecalho-modal-fechar {
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+.corpo-modal {
+    padding: 1px 8px 8px 8px;
+}
+
+.rodape-modal {
+    border-top: solid #eee 1px;
+    padding: 8px;
 }
