@@ -1,4 +1,4 @@
-import './App.css';
+import FeriadoForms from "./Components/FeriadoForms";
 
 function abrirModal(carregarModal) {
   console.log("Abrir");
@@ -36,13 +36,7 @@ function App() {
             </div>
 
             <div className="pt-[0.0625rem] pr-2 pb-2 pl-2">
-                teste modal
-            </div>
-            <div className="bt-[0.0625rem] bt-gray-200 p-2">
-                <button
-                    className="px-[0.5rem] py-[0.2rem] text-base text-lime-600 bg-white hover:text-white hover:bg-lime-600 border-[0.1rem] border-lime-600 rounded cursor-pointer transition-all ease duration-30" 
-                    onClick={() => fecharModal('vis-modal')}
-                >Fechar</button>
+                <FeriadoForms />
             </div>
         </div>
       </div>
