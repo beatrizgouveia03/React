@@ -18,7 +18,7 @@ function  fecharModal(fecharModal) {
 function App() {
   return (
     <div id="form" className="m-[1rem] text-left font-serif">
-      <h1 className='text-3xl font-medium'>Janela Modal</h1>
+      <h1 className='text-3xl font-semibold'>Janela Modal</h1>
 
       <button 
         className="px-[0.5rem] py-[0.2rem] text-base text-lime-600 bg-white hover:text-white hover:bg-lime-600 border-[0.1rem] border-lime-600 rounded cursor-pointer transition-all ease duration-30" 
