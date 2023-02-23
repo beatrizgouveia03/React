@@ -9,7 +9,7 @@ function FeriadoForms() {
                 <br />
             </div>
 
-            <form>
+            <form className="ml-1">
                 <fieldset className="border-0 mr-[1em]">
                     <div className="mb-[1em]">
                         <label className="mb-[0.2em] block" htmlFor="nome"><strong>Nome</strong></label>
@@ -37,17 +37,17 @@ function FeriadoForms() {
                     <label className="mb-[0.2em] block"><strong>De qual lado da aplicação você desenvolve?</strong></label>
                     <label className="mb-[0.2em] block">
                         <input 
-                            className="rounded-[5px] p-[0.2em] border-[1px] border-solid border-cyan-600 shadow-sm block"
+                            className="rounded-[5px] p-[0.2em] border-[1px] border-solid border-cyan-600 shadow-sm mr-1"
                             type="radio" name="devweb" value="frontend" defaultChecked />Front-end
                     </label>
                     <label className="mb-[0.2em] block">
                         <input 
-                            className="rounded-[5px] p-[0.2em] border-[1px] border-solid border-cyan-600 shadow-sm block"
+                            className="rounded-[5px] p-[0.2em] border-[1px] border-solid border-cyan-600 shadow-sm mr-1"
                             type="radio" name="devweb" value="backend" />Back-end
                     </label>
                     <label className="mb-[0.2em] block">
                         <input 
-                            className="rounded-[5px] p-[0.2em] border-[1px] border-solid border-cyan-600 shadow-sm block"
+                            className="rounded-[5px] p-[0.2em] border-[1px] border-solid border-cyan-600 shadow-sm mr-1"
                             type="radio" name="devweb" value="fullstack" />Full-stack
                     </label>
                 </div>
@@ -58,7 +58,7 @@ function FeriadoForms() {
                         className="rounded-[5px] p-[0.2em] border-[1px] border-solid border-cyan-600 shadow-sm block"
                         id="senioridade"
                     >
-                        <option value="true" disabled>Selecione</option>
+                        <option value="" selected disabled>Selecione</option>
                         <option>Júnior</option>
                         <option>Pleno</option>
                         <option>Sênior</option>
@@ -66,21 +66,21 @@ function FeriadoForms() {
                 </div>
 
                 <fieldset className="border-0 mr-[1em]">
-                    <div id="check" className="inline-block space-x-1">
+                    <div id="check" className="inline-block">
                         <label><strong>Selecione o que você tem conhecimento:</strong></label><br />
-                        <input className="rounded-[5px]" type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML" />
+                        <input className="mr-0.5 rounded-[5px]" type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML" />
                         <label htmlFor="tecnologia1">HTML</label>
-                        <input className="rounded-[5px]" type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS" />
+                        <input className="ml-2 mr-0.5 rounded-[5px]" type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS" />
                         <label htmlFor="tecnologia2">CSS</label>
-                        <input className="rounded-[5px]" type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript" />
+                        <input className="ml-2 mr-0.5 rounded-[5px]" type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript" />
                         <label htmlFor="tecnologia3">Javascript</label>
-                        <input className="rounded-[5px]" type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP" />
+                        <input className="ml-2 mr-0.5 rounded-[5px]" type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP" />
                         <label htmlFor="tecnologia4">PHP</label>
-                        <input className="rounded-[5px]" type="checkbox" id="tecnologia5" name="tecnologia5" value="C#" />
+                        <input className="ml-2 mr-0.5 rounded-[5px]" type="checkbox" id="tecnologia5" name="tecnologia5" value="C#" />
                         <label htmlFor="tecnologia5">C#</label>
-                        <input className="rounded-[5px]" type="checkbox" id="tecnologia6" name="tecnologia6" value="Java" />
+                        <input className="ml-2 mr-0.5 rounded-[5px]" type="checkbox" id="tecnologia6" name="tecnologia6" value="Java" />
                         <label htmlFor="tecnologia6">Java</label>
-                        <input className="rounded-[5px]" type="checkbox" id="tecnologia7" name="tecnologia7" value="Python" />
+                        <input className="ml-2 mr-0.5 rounded-[5px]" type="checkbox" id="tecnologia7" name="tecnologia7" value="Python" />
                         <label htmlFor="tecnologia7">Python</label>
                     </div>
                 </fieldset>
