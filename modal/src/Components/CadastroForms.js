@@ -1,3 +1,5 @@
+import '.././App.css';
+
 function FeriadoForms() {
     return (
         <div className="m-0 p-0 font-serif bg-cyan-50 text-base text-cyan-800">
