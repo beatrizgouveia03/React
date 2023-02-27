@@ -28,7 +28,7 @@ function FeriadosForm() {
                 <div id="periodo" className="w-2/4">
                     <label className="text-md font-semibold">Período:</label>
                     <select
-                        id="feriadoPeriodo"
+                        name="feriadoPeriodo"
                         defaultValue=""
                         className="block bg-gray-100 h-[2em] border-[0.15em] border-gray-500 rounded-lg"
                     >
@@ -44,8 +44,8 @@ function FeriadosForm() {
 
                     <button
                         type="submit"
-                        className="block max-w-[5em] rounded-[5em] text-white text-lg bg-green-800 px-0 py-0 my-0 mx-auto border-none hover:bg-green-500 hover:p-[0.1em]"
-                    />
+                        className="block max-w-[10em] rounded-[5em] text-white text-lg bg-green-800 px-4 py-0 my-0 mx-auto border-none hover:bg-green-500 hover:py-[0.1em]"
+                    > Cadastrar</button>
                 </div>
 
             </form>
