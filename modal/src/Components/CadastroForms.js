@@ -1,6 +1,6 @@
 import '.././App.css';
 
-function FeriadoForms() {
+function CadastroForms() {
     return (
         <div className="m-0 p-0 font-serif bg-cyan-50 text-base text-cyan-800">
             <div className="text-cyan-900 text-center pt-[1em]">
@@ -104,4 +104,4 @@ function FeriadoForms() {
     )
 }
 
-export default FeriadoForms;
+export default CadastroForms;
