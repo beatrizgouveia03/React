@@ -1,4 +1,4 @@
-import Item from "./Item"
+import Item from "./eventos/Item"
 
 function List() {
     return(
