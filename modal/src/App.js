@@ -9,6 +9,7 @@ function abrirModal(carregarModal) {
 }
 
 function  fecharModal(fecharModal) {
+  console.log("Fechar");
   let modal = document.getElementById(fecharModal);
 
   modal.style.display = 'none';

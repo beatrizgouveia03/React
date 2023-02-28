@@ -1,4 +1,15 @@
+import { useState } from "react";
+
 function FeriadosForm() {
+
+    function cadastro() {
+        console.log(`Feriado "${descricao}" do dia ${data} foi cadastrado para o período ${periodo} `)
+    }
+
+    const [descricao, setDescricao] = useState()
+    const [data, setData] = useState()
+    const [periodo, setPeriodo] = useState()
+
     return (
         <div className="overlay bg-white p-2 text-lg ">
             <form className="space-y-5">
@@ -8,7 +19,8 @@ function FeriadosForm() {
                     <input
                         type="text" required
                         placeholder="Descrição do feriado"
-                        name="feriadoDescricao"
+                        name="descricao"
+                        onChange={(e) => setDescricao(e.target.value)}
                         className="bg-gray-100 h-[2em] border-[0.15em]  border-gray-500 rounded-lg placeholder:text-gray-500 focus:bg-blueDark-200 focus:bg-opacity-20 focus:border-blueDark-400"
                     />
 
@@ -19,8 +31,9 @@ function FeriadosForm() {
 
                     <input
                         type="date" required
-                        name="feriadoData"
-                        className="bg-gray-100 h-[2em] border-[0.15em] border-gray-500 rounded-lg text-gray-500 focus:bg-blueDark-200 focus:bg-opacity-20 focus:border-blueDark-400"
+                        name="data"
+                        onChange={(e) => setData(e.target.value)}
+                        className="bg-gray-100 h-[2em] border-[0.15em] border-gray-500 rounded-lg focus:text-gray-500 focus:bg-blueDark-200 focus:bg-opacity-20 focus:border-blueDark-400"
                     />
 
                 </div>
@@ -28,8 +41,9 @@ function FeriadosForm() {
                 <div id="periodo" className="w-2/4">
                     <label className="text-md font-semibold">Período:</label>
                     <select
-                        name="feriadoPeriodo"
+                        name="periodo"
                         defaultValue=""
+                        onChange={(e) => setPeriodo(e.target.value)}
                         className="block bg-gray-100 h-[2em] border-[0.15em] border-gray-500 rounded-lg"
                     >
                         <option value="" disabled>Selecione</option>
@@ -44,6 +58,7 @@ function FeriadosForm() {
 
                     <button
                         type="submit"
+                        onClick={cadastro}
                         className="block max-w-[10em] rounded-[5em] text-white text-lg bg-green-800 px-4 py-0 my-0 mx-auto border-none hover:bg-green-500 hover:py-[0.1em]"
                     > Cadastrar</button>
                 </div>
