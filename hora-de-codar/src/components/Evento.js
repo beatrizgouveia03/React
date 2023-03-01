@@ -1,4 +1,4 @@
-import Button from "./eventos/Button"
+import Button from "./secundarios/Button"
 
 function Evento() {
 
@@ -10,10 +10,10 @@ function Evento() {
         console.log('Ativando segundo evento')
     }
 
-    return(
+    return (
         <div>
             <p>Clique para disparar um evento:</p>
-            <Button 
+            <Button
                 event={meuEvento}
                 text="Primeiro evento"
             />

@@ -1,5 +1,5 @@
 import './App.css';
-import OtherList from './components/OtherList';
+import OtherList from './components/secundarios/OtherList';
 
 
 function App() {
