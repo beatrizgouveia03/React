@@ -15,3 +15,4 @@ function SeuNome({ setNome }) {
 } 
 
 export default SeuNome
+

@@ -1,22 +1,26 @@
 import FeriadoForms from "./Components/FeriadoForms";
 
-function abrirModal(carregarModal) {
-  console.log("Abrir");
-  let modal = document.getElementById(carregarModal);
-
-  modal.style.display = 'block';
-  document.getElementById('form').style.overflow = 'hidden';
-}
-
-function  fecharModal(fecharModal) {
-  console.log("Fechar");
-  let modal = document.getElementById(fecharModal);
-
-  modal.style.display = 'none';
-  document.getElementById('form').style.overflow = 'auto';
-}
 
 function App() {
+
+  function abrirModal(carregarModal) {
+    console.log("Abrir");
+    let modal = document.getElementById(carregarModal);
+
+    modal.style.display = 'block';
+    document.getElementById('form').style.overflow = 'hidden';
+  }
+
+  function fecharModal(fecharModal) {
+    console.log("Fechar");
+    let modal = document.getElementById(fecharModal);
+
+    modal.style.display = 'none';
+    document.getElementById('form').style.overflow = 'auto';
+  }
+
+
+
   return (
     <div id="form" className="m-[1rem] text-left font-serif">
       <h1 className='text-3xl font-semibold'>Janela Modal</h1>

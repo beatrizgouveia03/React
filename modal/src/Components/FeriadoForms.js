@@ -1,14 +1,19 @@
 import { useState } from "react";
+import FeriadosList from "./Secundarios/FeriadosList";
 
 function FeriadosForm() {
 
-    function cadastro() {
-        console.log(`Feriado "${descricao}" do dia ${data} foi cadastrado para o período ${periodo} `)
-    }
-
-    const [descricao, setDescricao] = useState()
+    let [descricao, setDescricao] = useState()
     const [data, setData] = useState()
     const [periodo, setPeriodo] = useState()
+
+    var feriados = ['teste1', 'teste2']
+    
+    function cadastro(e) {
+        e.preventDefault()
+        console.log(`Feriado "${descricao}" do dia ${data} foi cadastrado para o período ${periodo} `)
+        feriados.push(descricao)
+    }
 
     return (
         <div className="overlay bg-white p-2 text-lg ">
@@ -61,6 +66,10 @@ function FeriadosForm() {
                         onClick={cadastro}
                         className="block max-w-[10em] rounded-[5em] text-white text-lg bg-green-800 px-4 py-0 my-0 mx-auto border-none hover:bg-green-500 hover:py-[0.1em]"
                     > Cadastrar</button>
+                </div>
+
+                <div> 
+                    <FeriadosList feriados={feriados}/>
                 </div>
 
             </form>
