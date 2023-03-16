@@ -4,7 +4,7 @@ import Empresa from "./pages/Empresa";
 import Home from "./pages/Home";
 import React from "react"
 import NavBar from "./components/NavBar";
-import Footer from "./components/layout/Footer";
+import Footer from "./components/Footer";
 
 
 function App() {
